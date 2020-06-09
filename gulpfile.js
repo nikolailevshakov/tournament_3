@@ -58,6 +58,12 @@ gulp.task("copy-assets", () => {
                 .on("end", browsersync.reload);
 });
 
+gulp.task('copy-img-assets', () => {
+    return gulp.src("./src/img_assets/*.*")
+                .pipe(gulp.dest(dist + "/img_assets"))
+                .on("end", browsersync.reload)
+})
+
 gulp.task("watch", () => {
     browsersync.init({
 		server: "./dist/",
@@ -69,6 +75,7 @@ gulp.task("watch", () => {
     gulp.watch("./src/index.html", gulp.parallel("copy-html"));
     gulp.watch("./src/js/assets/*.*", gulp.parallel("copy-assets"));
     gulp.watch("./src/js/**/*.js", gulp.parallel("build-js"));
+    gulp.watch("./src/img_assets/*.*", gulp.parallel("copy-img-assets"));
 });
 
 gulp.task("build", gulp.parallel("copy-html", "copy-assets", "build-js", "css"));
