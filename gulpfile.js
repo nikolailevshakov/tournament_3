@@ -72,7 +72,7 @@ gulp.task("watch", () => {
     });
     
     gulp.watch("./src/css/*.css", gulp.parallel("css"));
-    gulp.watch("./src/index.html", gulp.parallel("copy-html"));
+    gulp.watch("./src/*.html", gulp.parallel("copy-html"));
     gulp.watch("./src/js/assets/*.*", gulp.parallel("copy-assets"));
     gulp.watch("./src/js/**/*.js", gulp.parallel("build-js"));
     gulp.watch("./src/img_assets/*.*", gulp.parallel("copy-img-assets"));

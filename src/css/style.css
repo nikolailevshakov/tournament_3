@@ -30,6 +30,21 @@ a {
     text-decoration: none;
     color: #000;
 }
+button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: var(--main-red);
+    color: #fff;
+    cursor: pointer;
+    font-size: 24px;
+    text-align: center;
+    border-style: none;
+}
+button:hover {
+    background-color: #fff;
+    color: var(--main-red);
+}
 a:hover {
     color: #fff;
     cursor: pointer;
@@ -40,6 +55,9 @@ header nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+header nav ul li a span {
+    color: var(--main-blue);
 }
 header .login_mark {
     width: 40px;
@@ -91,8 +109,6 @@ span {
     color: #fff;
 }
 footer {
-    display: none;
-    position: absolute;
     bottom: 0;
     height: 150px;
     width: 100%;
@@ -130,4 +146,124 @@ footer .down_footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+                                /* PAGE SEASON */
+/*----------------------------------------------------------------------------------------*/
+.season {
+    background: url('../img_assets/season.jpg') center center/cover no-repeat;
+    width: 100%;
+    min-height: 200vh;
+    padding: 20vh 5vh 10vh 5vh;
+}
+.season .leave_forecast {
+    display: flex;
+    justify-content: space-around;
+}
+.season .leave_forecast .list_games {
+    width: 40%;
+    height: 70vh;
+    border-radius: 10px;
+    box-shadow: 0px 9px 48px 12px rgba(0, 0, 0, 0.24);
+    background-color: var(--main-blue);
+    color: #fff;
+    font-size: 20px;
+}
+.season .leave_forecast .list_games h3 {
+    color: var(--main-red);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.season .leave_forecast .list_games .inner_list_games form input {
+    width: 40px;
+    height: 25px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: #ffffff;
+    display: block;
+    margin: 9px 6px;
+    font-size: 20px;
+    text-align: center;
+}
+.season .leave_forecast .list_games .inner_list_games form input:focus {
+    outline: none;
+}
+.season .leave_forecast .list_games .inner_list_games {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.season .leave_forecast .list_games .inner_list_games form {
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+}
+.season .leave_forecast .list_games .inner_list_games ul li {
+    margin: 6px 0;
+}
+.season .leave_forecast .list_games button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.season .times {
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+.season .times p {
+    margin-bottom: 90%;
+}
+.season .table {
+    margin-top: 12vh;
+}
+.season .table h3 {
+    font-size: 48px;
+    color: #ffffff;
+    text-align: center;
+}
+.season .table table {
+    width: 60%;
+    height: 60vh;
+    border-radius: 10px;
+    box-shadow: 0px 9px 48px 12px rgba(0, 0, 0, 0.24);
+    background-color: var(--main-blue);
+    color: var(--main-red);
+    text-shadow: 2px 2px 2px #000;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10vh;
+}
+.season .table table .first {
+    background-color: var(--main-blue);
+}
+.season .table button {
+    width: 300px;
+    display: block;
+    margin: 40px auto;
+}
+.comments {
+    width: 100%;
+    min-height: 50vh;
+    padding-top: 5vh;
+    /* background: url(../img_assets/season.jpg) center center/cover no-repeat; */
+}
+.comments .comment {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.comments .comment .text {
+    min-width: 30%;
+    min-height: 10vh;
+    border-radius: 10px;
+    box-shadow: 0px 9px 48px 12px rgba(0, 0, 0, 0.24);
+    background-color: #ffffff;
+}
+.comments .comment img {
+    width: 100px;
+    height: 100px;
+    margin-right: 5vh;
 }
