@@ -86,13 +86,36 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./src/js/assets/index.js":
+/*!********************************!*\
+  !*** ./src/js/assets/index.js ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return indexHello; });
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var indexHello = function indexHello() {
+  _classCallCheck(this, indexHello);
+};
+
+
+
+/***/ }),
+
 /***/ "./src/js/main.js":
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _assets_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./assets/index */ "./src/js/assets/index.js");
 
 
 /***/ })
